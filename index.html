@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>angular2 playground</title>
+    <script data-require="lodash.js@*" data-semver="3.10.0" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.0/lodash.js"></script>
+       <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jspm_packages/github/google/material-design-lite@1.1.1/material.min.css">
+    <script src="jspm_packages/github/google/material-design-lite@1.1.1/material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://code.angularjs.org/2.0.0-beta.0/angular2-polyfills.js"></script>
+    <script src="https://code.angularjs.org/tools/system.js"></script>
+    <script src="https://code.angularjs.org/tools/typescript.js"></script>
+    <script src="config.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-beta.0/Rx.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-beta.0/angular2.min.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-beta.0/http.min.js"></script>
+    <script src="ngrx.js"></script>
+    <script>
+    System.import('app')
+      .catch(console.error.bind(console));
+  </script>
+  </head>
+
+  <body>
+          <div class="content mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">NGRX</span>
+          <!-- Add spacer, to align navigation to the right -->
+          <div class="mdl-layout-spacer"></div>
+          <!-- Navigation. We hide it in small screens. -->
+          <nav class="mdl-navigation mdl-layout--large-screen-only">
+            <a class="mdl-navigation__link" href="https://angular.io/" target="_blank">ANGULAR 2</a>
+            <a class="mdl-navigation__link" href="https://github.com/ngrx/store" target="_blank">NGRX</a>
+            <a class="mdl-navigation__link" href="https://github.com/simpulton/ngrx-rest-app" target="_blank">SOURCE CODE</a>
+          </nav>
+        </div>
+      </header>
+      <main class="mdl-layout__content page-content">
+        <todo-app class="mdl-grid">
+          <div class="mdl-spinner mdl-js-spinner is-active"></div>
+        </todo-app>
+      </main>
+    </div>
+
+  </body>
+
+</html>
